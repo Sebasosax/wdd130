@@ -4,15 +4,22 @@
     --spacing: 1rem;
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main {
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Estructura principal */
+header, .grid, footer {
     max-width: 840px;
+    margin: 0 auto;
 }
 
 main img {
@@ -24,59 +31,86 @@ main img {
     float: right;
     margin: 0 0 var(--spacing) var(--spacing);
     position: relative;
-    top: -30px;
+    top: 10px;
 }
 
+/* Navegación */
 nav {
     background-color: var(--main-color);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
-    padding: 10px;
+    color: #fff;
+    padding: 0.5rem;
     display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
+/* Títulos */
 h1 {
-    color: yellowgreen;
+    color:black; 
+    border-bottom: 2px solid #ccc; /* Agregado borde inferior */
+    padding-bottom: 0.5rem;
 }
 
-p {
-    padding: 0%;
+/* Aside */
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 20rem 1fr;
+  gap: 2rem;
+}
+
+main {
+  grid-column: 2/3;
+  grid-row: 1;
+  float: none;
 }
 
 aside {
-    width: 20rem;
-    margin: var(--spacing);
-    border: 1px solid rgb(0, 0, 0 / 0.2);
-    padding: var(--spacing);
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    position: relative;
+  width: 20rem;
+  /*margin: var(--spacing);*/
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: var(--spacing);
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  position: relative;
+  height:100%;
+
+  grid-column: 1/2; 
+  grid-row: 1/2;
 }
 
 aside img {
     width: 200px;
     height: auto;
+
 }
 
 aside h2 {
-    position: absolute;
-    top: -10px;
-    left: 55px;
+    top: auto;
+    left: auto;
+    margin-bottom: 0.5rem;
 }
 
+/* Footer */
 footer {
     margin-top: 15px;
     border-top: 1px solid var(--text-dark);
     text-align: center;
 }
 
+/* Caja reutilizable */
 .box {
     margin: var(--spacing);
-    border: 1px solid rgb(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: var(--spacing);
     background-color: #ddd;
     color: var(--text-dark);
