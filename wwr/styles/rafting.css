@@ -1,6 +1,6 @@
 /* Rafting Site CSS */
 :root {
-  --primary-color: #0099cc;
+  --primary-color: #234B25;
   --secondary-color: #f2f2f2;
   --accent-color: #333;
   --text-color: #202020;
@@ -25,7 +25,7 @@ header {
   display: grid; 
   grid-template-columns: 1fr auto;
   align-items: center;
-  background-color: #234B25;
+  background-color: var(--primary-color);
   padding: 1rem 25rem;
 }
 
