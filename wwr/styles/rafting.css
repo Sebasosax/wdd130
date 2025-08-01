@@ -97,7 +97,7 @@ main {
 }
 
 section h2 {
-  text-align: center; /* ← centramos títulos como pediste */
+  text-align: center; 
   font-family: var(--heading-font);
   margin-bottom: 1rem;
 }
@@ -144,7 +144,7 @@ footer .socialmedia {
 }
 
 footer .socialmedia a {
-  background-color: white; /* ← cajas blancas */
+  background-color: white; 
   padding: 0.5rem;
   border-radius: 8px;
   display: inline-block;
