@@ -156,3 +156,44 @@ footer .socialmedia img {
   height: 30px;
   display: block;
 }
+@media (max-width: 600px) {
+  header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1rem;
+  }
+
+  nav {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1,
+  .hero article {
+    position: static;
+    transform: none;
+    margin: 1rem auto;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .hero article img {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+    width: 100%;
+    max-width: 220px;
+    border-radius: 8px;
+  }
+
+  footer p {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+  }
+
+  footer .socialmedia {
+    justify-content: center;
+    flex: 1 1 100%;
+  }
+}
