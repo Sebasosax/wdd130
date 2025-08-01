@@ -7,50 +7,76 @@
     --body-font: "Outfit", sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color)
-}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    gap: 1.5rem;
 }
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color)
+    color: var(--accent1-color);
 }
+
 
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
+    padding: 0 1rem;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+
+header {
+    background-color: #7ACAC3;
+    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 1rem;
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-
+header img {
+    height: 120px;
+    margin: 0;
 }
 
-.socialmedia a {
+header h1 {
+    justify-self: center;
+    font-size: 2rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    background-color: var(--accent1-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
+
+nav a:hover {
+    background-color: #4682b4;
+}
+
 
 .hero {
     position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .hero img {
@@ -59,40 +85,136 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
-    top: 15px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     width: 100%;
     padding: 16px;
-    text-align: center;
-    opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
-    z-index: 2;
+    opacity: 0.85;
 }
 
 .hero article {
     position: absolute;
     top: 150px;
-    left: 150px;
-    background-color: rgb(255, 255, 255, 0.7);
-    padding: 16px;
-    max-width: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    max-width: 1000px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
     z-index: 2;
+    text-align: left;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 300px;
     margin-left: 12px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
+
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin: 2rem 0 1rem;
+    text-align: center; 
+}
+
+p, article p {
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+
+.divider {
+    width: 60%;
+    margin: 2rem auto;
+    border: 1px solid var(--primary-color);
+    opacity: 0.5;
+}
+
+
+.adventures .gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1rem 0;
+    gap: 0.5rem;
+}
+
+.adventures figure {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.adventures figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
 .imagen {
-  margin: 10px;
-  border-radius: 12px;          /* bordes redondeados */
-  border: 2px solid #ccc;       /* un borde sutil */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 10px;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-top: 1px solid var(--accent1-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--accent1-color);
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.socialmedia a img {
+    height: 40px;
+    width: auto;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.socialmedia a {
+  background-color: white;  /* fondo blanco */
+  padding: 5px;             /* espacio alrededor del logo para que no quede pegado */
+  border-radius: 6px;       /* bordes redondeados para la caja */
+  display: inline-block;    /* para que tome solo el tamaño necesario */
+  box-shadow: 0 0 5px rgba(0,0,0,0.1); /* sombra sutil para dar un poco de profundidad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.socialmedia a img:hover {
+    transform: scale(1.1);
 }
