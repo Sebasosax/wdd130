@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  display: grid; 
+  display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   background-color: var(--primary-color);
@@ -32,12 +32,13 @@ header {
 header img {
   height: 80px;
 }
+
 nav a:hover {
   background-color: #4682b4;
 }
 
 nav {
-  display: flex; 
+  display: flex;
   gap: 5rem;
 }
 
@@ -79,7 +80,7 @@ nav a {
   padding: 2rem;
   max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-align: left;
 }
 
@@ -97,7 +98,7 @@ main {
 }
 
 section h2 {
-  text-align: center; 
+  text-align: center;
   font-family: var(--heading-font);
   margin-bottom: 1rem;
 }
@@ -136,7 +137,7 @@ footer {
 footer p {
   margin: 0.5rem 0;
   text-align: center;
-  flex: 1 1  50%;
+  flex: 1 1 50%;
 }
 
 footer .socialmedia {
@@ -145,7 +146,7 @@ footer .socialmedia {
 }
 
 footer .socialmedia a {
-  background-color: white; 
+  background-color: white;
   padding: 0.5rem;
   border-radius: 8px;
   display: inline-block;
@@ -156,6 +157,7 @@ footer .socialmedia img {
   height: 30px;
   display: block;
 }
+
 @media (max-width: 600px) {
   header {
     grid-template-columns: 1fr;
