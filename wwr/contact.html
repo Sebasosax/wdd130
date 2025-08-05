@@ -2,18 +2,18 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
         content="Get in touch with Down the River to plan your next rafting adventure. Reach out for questions, bookings, or more information." />
     <meta name="author" content="Juan Diego Sebastian Sosa" />
     <title>Contact Us | Down the River</title>
     <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 
@@ -78,16 +78,16 @@
                     <input type="email" id="email" name="email" required placeholder="email" />
 
                     <p>Purpose of your message:</p>
-                    <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label><br />
-                    <label><input type="radio" name="purpose" value="bookings" /> Booking Question</label><br />
-                    <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
+                    <label><input type="radio" id="general" name="purpose" value="general" required /> General Inquiry</label><br />
+                    <label><input type="radio"  id="bookings"name="purpose" value="bookings" /> Booking Question</label><br />
+                    <label><input type="radio"  id="suggestion" name="purpose" value="suggestion" /> Website Suggestion</label>
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
 
                     <label>
-                        <input type="checkbox" name="subscribe" />
-                        Wireframe diseño Contáctenos
+                        <input type="checkbox" id="subscribe" name="subscribe" />
+                        Subscribe me to the monthly newsletter
                     </label>
                     <button type="submit">Send Message</button>
                 </form>
