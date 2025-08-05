@@ -78,9 +78,12 @@
                     <input type="email" id="email" name="email" required placeholder="email" />
 
                     <p>Purpose of your message:</p>
-                    <label><input type="radio" id="general" name="purpose" value="general" required /> General Inquiry</label><br />
-                    <label><input type="radio"  id="bookings" name="purpose" value="bookings" /> Booking Question</label><br />
-                    <label><input type="radio"  id="suggestion" name="purpose" value="suggestion" /> Website Suggestion</label>
+                    <input type="radio" id="general" name="purpose" value="general" required />
+                    <label for="general">General Inquiry</label><br />
+                    <label for="bookings"><input type="radio" id="bookings" name="purpose" value="bookings" /> Booking
+                        Question</label><br />
+                    <label for="suggestion"><input type="radio" id="suggestion" name="purpose" value="suggestion" />
+                        Website Suggestion</label>
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
