@@ -22,11 +22,12 @@ body {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--primary-color);
-  padding: 1rem 25rem;
+  padding: 1rem 2rem; 
 }
 
 header img {
