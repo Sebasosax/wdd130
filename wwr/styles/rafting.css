@@ -593,7 +593,6 @@ footer .socialmedia img {
   max-width: 90%;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  pointer-events: none;
 }
 
 /* Call to Contact Section */
